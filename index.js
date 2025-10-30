@@ -7,20 +7,20 @@ let guestScore = 0;
 //Home scoreboard functions 
 function addHomeOne() {
 homeScore += 1
-homeScoreEl.innerText = homeScore
+homeScoreEl.value = homeScore
 
 window.addHomeOne = addHomeOne // needed to work on netlify, scope to avoid name collisons
 }
 function addHomeTwo() {
     homeScore += 2
-    homeScoreEl.innerText = homeScore
+    homeScoreEl.value = homeScore
 
     window.addHomeTwo = addHomeTwo
 }
 
 function addHomeThree() {
     homeScore += 3 
-    homeScoreEl.innerText = homeScore
+    homeScoreEl.value = homeScore
 
     window.addHomeThree = addHomeThree
 }
@@ -28,21 +28,21 @@ function addHomeThree() {
 //Start of guest scoreboard functions
 function addGuestOne() {
     guestScore += 1
-    guestScoreEl.innerText = guestScore
+    guestScoreEl.value = guestScore
 
     window.addGuestOne = addGuestOne
 }
 
 function addGuestTwo() {
     guestScore += 2 
-    guestScoreEl.innerText = guestScore
+    guestScoreEl.value = guestScore
 
     window.addGuestTwo = addGuestTwo
 }
 
 function addGuestThree() {
     guestScore += 3 
-    guestScoreEl.innerText = guestScore
+    guestScoreEl.value = guestScore
 
     window.addGuestThree = addGuestThree
 }
@@ -50,7 +50,7 @@ function addGuestThree() {
 //Reset button for both home score and guest score, need to initialize the global varialbe first to be at 0 and not count back to the #
 function resetHomeScore() {
 homeScore = 0
-document.getElementById("home-Score").innerText = 0
+document.getElementById("home-Score").value = 0
 
 window.resetHomeScore = resetHomeScore
 }
@@ -59,7 +59,7 @@ window.resetHomeScore = resetHomeScore
 
 function resetGuestScore() {
 guestScore = 0
-document.getElementById("guest-Score").innerText = 0
+document.getElementById("guest-Score").value = 0
 
 window.resetGuestScore = resetGuestScore
  }

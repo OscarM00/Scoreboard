@@ -1,6 +1,7 @@
 {
-  "name": "Scrim-s04k019",
-  "description": "https://scrimba.com/fullstack-path-c0fullstack/~05h",
+  "name": "scoreboard",
+  "type": "module",
+  "description": "A simple home and guest scoreboard built with HTML, CSS, and JavaScript",
   "scripts": {
     "start": "vite",
     "dev": "vite",
